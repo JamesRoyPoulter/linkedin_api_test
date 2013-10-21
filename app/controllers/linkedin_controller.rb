@@ -23,7 +23,7 @@ class LinkedinController < ApplicationController
   end
 
   def oauth_account
-    client = LinkedIn::Client.new('your-api-key', 'your-secret-key', @@config)
+    client = LinkedIn::Client.new('z7jq2f15zumw', 'LOxanysGV6qs9qlJ', @@config)
     pin = params[:oauth_verifier]
     if pin
       atoken, asecret = client.authorize_from_request(session[:rtoken], session[:rsecret], pin)

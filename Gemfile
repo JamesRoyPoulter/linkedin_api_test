@@ -11,6 +11,18 @@ gem 'sqlite3'
 gem 'devise'
 gem 'linkedin'
 gem 'twitter-bootstrap-rails'
+gem 'therubyracer'
+gem 'less-rails'
+
+
+group :development do
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry-stack_explorer'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -25,6 +37,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
